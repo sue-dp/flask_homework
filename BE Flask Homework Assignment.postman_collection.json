@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "42ff98c3-3a44-4046-9dc4-b285bdc51363",
+		"name": "BE Flask Homework Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27335739"
+	},
+	"item": [
+		{
+			"name": "User Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Celia\",\n    \"last_name\": \"Rae\",\n    \"email\": \"Celia@Rae.com\",\n    \"phone_number\": \"555-555-5555\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8086/user"
+			},
+			"response": []
+		},
+		{
+			"name": "User Get By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8086/user/<user_id>"
+			},
+			"response": []
+		},
+		{
+			"name": "Users Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8086/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Activate/Deactivate",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": "http://localhost:8086/user/97678ab7-807d-416b-b5cd-2ef538b987d0"
+			},
+			"response": []
+		},
+		{
+			"name": "User Delete By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8086/user/8496cab3-a119-4345-9b6e-06faa645bacc"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"<first_name\",\n    \"last_name\": \"<last_name>\",\n    \"email\": \"<email>\",\n    \"phone_number\": \"<phone_number>\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8086/user/<user_id>"
+			},
+			"response": []
+		}
+	]
+}
