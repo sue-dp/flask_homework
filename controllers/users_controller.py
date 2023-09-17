@@ -78,7 +78,7 @@ def user_activity(user_id):
             user['active'] = not user['active']
             user_found = True
 
-    if not user_found:
+    if user_found == False:
         return jsonify(f'User with id: {user_id} not found.'), 404
 
     database_write(user_records)
